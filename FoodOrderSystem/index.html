@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FoodOrderSystem</title>
+
+    <!-- fontawsome icon link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom css link -->
+    
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    
+  
+  </head>
+  <body>
+    <section class="form-section login-section">
+      <h1 class="heading-primary text-center">
+        Welcome to my food order System
+      </h1>
+      <div class="container login grid grid--2--col">
+        <form class="login-form">
+          <h2 class="heading-secondary">Log In</h2>
+          <div>
+            <label for="username">Username</label>
+            <input
+              required
+              class="input__form input-login--user"
+              type="text"
+              id="username"
+              placeholder="username"
+            />
+            <p class="wrong-alret wrong-username">Incorrect username!</p>
+          </div>
+          <div>
+            <label for="password">Password</label>
+            <input
+              class="input__form input-login--password"
+              type="password"
+              id="password"
+              placeholder="password"
+              required
+            />
+            <p class="wrong-alret wrong-password">Incorrect password!</p>
+          </div>
+          <button class="btn btn-login">Log in</button>
+        </form>
+        <div class="login-img" aria-label="image"></div>
+      </div>
+      <p class="text-center account">
+        Don't have an account, <span class="create one">Create one</span>
+      </p>
+    </section>
+    <section class="form-section signup-section">
+      <h1 class="heading-primary text-center">
+        Welcome to my food order System
+      </h1>
+      <div class="container login grid grid--2--col">
+        <form class="signup-form">
+          <h2 class="heading-secondary">Sign Up</h2>
+          <div>
+            <label for="username-s">Username</label>
+            <input
+              required
+              class="input__form input-signup--user"
+              type="text"
+              id="username-s"
+              placeholder="username"
+            />
+          </div>
+          <div>
+            <label for="password-s">Password</label>
+            <input
+              required
+              class="input__form input-signup--password"
+              type="text"
+              id="password-s"
+              placeholder="password"
+            />
+          </div>
+          <button class="btn btn-signup">Sing up</button>
+        </form>
+        <div class="login-img" aria-label="image"></div>
+      </div>
+
+      <p class="text-center account">
+        Have an account, <span class="create two">Log in</span>
+      </p>
+    </section>
+    <main>
+      <section class="user-ui-section">
+        <div class="nav">
+          <p class="welcome">Welcome Gohlatt</p>
+          <div class="icon-mail">
+            <div><i class="fa-solid fa-envelope"></i></div>
+            <p class="noti">1</p>
+          </div>
+          <p>Balance - <span class="balance">2000$</span></p>
+          <div class="shop">
+            <i class="fa-solid fa-cart-shopping"></i> <span>My shop</span>
+          </div>
+        </div>
+
+        <div class="container foods">
+          <h2 class="heading-secondary mg-bot text-center">
+            Today Special Menus
+          </h2>
+          <div class="grid grid--4--col">
+            <div class="food-box">
+              <img class="food-img" src="./img/Sushi.jpg" alt="sushi photo" />
+              <div class="food-text-box">
+                <p class="heading-tertiary text-center">Sushi</p>
+                <div class="price-text-box">
+                  <p class="price">$100</p>
+                  <button id="food0" class="btn btn-add">Add cart</button>
+                </div>
+              </div>
+            </div>
+            <!-- *********** -->
+            <div class="food-box">
+              <img class="food-img" src="./img/Ramen.jpg" alt="Ramen photo" />
+              <div class="food-text-box">
+                <p class="heading-tertiary text-center">Ramen</p>
+                <div class="price-text-box">
+                  <p class="price">$150</p>
+                  <button id="food1" class="btn btn-add">Add cart</button>
+                </div>
+              </div>
+            </div>
+            <!-- *********** -->
+            <div class="food-box">
+              <img
+                class="food-img"
+                src="./img/TomYan.jpg"
+                alt="Tom Yam photo"
+              />
+              <div class="food-text-box">
+                <p class="heading-tertiary text-center">Tom Yam</p>
+                <div class="price-text-box">
+                  <p class="price">$130</p>
+                  <button id="food2" class="btn btn-add">Add cart</button>
+                </div>
+              </div>
+            </div>
+            <!-- *********** -->
+            <div class="food-box">
+              <img class="food-img" src="./img/Kebab.jpg" alt="Tom Yam photo" />
+              <div class="food-text-box">
+                <p class="heading-tertiary text-center">Kebab</p>
+                <div class="price-text-box">
+                  <p class="price">$170</p>
+                  <button id="food3" class="btn btn-add">Add cart</button>
+                </div>
+              </div>
+            </div>
+            <!-- *********** -->
+            <div class="food-box">
+              <img class="food-img" src="./img/Paella.jpg" alt="paella photo" />
+              <div class="food-text-box">
+                <p class="heading-tertiary text-center">Paella</p>
+                <div class="price-text-box">
+                  <p class="price">$200</p>
+                  <button id="food4" class="btn btn-add">Add cart</button>
+                </div>
+              </div>
+            </div>
+            <!-- *********** -->
+            <div class="food-box">
+              <img
+                class="food-img"
+                src="./img/Peking.jpg"
+                alt="peking duck photo"
+              />
+              <div class="food-text-box">
+                <p class="heading-tertiary text-center">Peking duck</p>
+                <div class="price-text-box">
+                  <p class="price">$250</p>
+                  <button id="food5" class="btn btn-add">Add cart</button>
+                </div>
+              </div>
+            </div>
+            <!-- *********** -->
+            <div class="food-box">
+              <img class="food-img" src="./img/Pho.jpg" alt="Pho photo" />
+              <div class="food-text-box">
+                <p class="heading-tertiary text-center">Pho</p>
+                <div class="price-text-box">
+                  <p class="price">$110</p>
+                  <button id="food6" class="btn btn-add">Add cart</button>
+                </div>
+              </div>
+            </div>
+            <!-- *********** -->
+            <div class="food-box">
+              <img class="food-img" src="./img/Pizza.jpg" alt="Pizza photo" />
+              <div class="food-text-box">
+                <p class="heading-tertiary text-center">Pizza</p>
+                <div class="price-text-box">
+                  <p class="price">$190</p>
+                  <button id="food7" class="btn btn-add">Add cart</button>
+                </div>
+              </div>
+            </div>
+            <!-- *********** -->
+          </div>
+        </div>
+
+        <!-- user-feedback -->
+        <div class="user-feedback">
+          <div class="container grid grid--2--col">
+            <div class="feedback">
+              <h3 class="heading-secondary mg-bot">
+                We want to hear your voice
+              </h3>
+              <form class="flex">
+                <textarea required class="text-area"> </textarea>
+                <button class="btn btn-send">Send</button>
+              </form>
+              <button class="btn btn-s">Create One</button>
+              <button class="btn btn-l">Switch Account</button>
+            </div>
+            <div class="admin">
+              <form class="admin-form">
+                <h2 class="heading-secondary">Admin Login</h2>
+                <div>
+                  <label for="username-admin">Username</label>
+                  <input
+                    required
+                    class="input__form input-user-admin"
+                    type="text"
+                    id="username-admin"
+                    placeholder="username"
+                  />
+                </div>
+                <div>
+                  <label for="password-admin">Password</label>
+                  <input
+                    required
+                    class="input__form input-password-admin"
+                    type="text"
+                    id="password-admin"
+                    placeholder="password"
+                  />
+                </div>
+                <button class="btn btn-admin">Login</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+      <section class="my-cart-section hidden">
+        <div class="my-cart-container">
+          <div class="order-food-contaienr">
+            <div class="order-food-box">
+              <figure>
+                <img class="order-img" src="img/Sushi.jpg" alt="suchi" />
+                <p class="order-food-name">sunshi</p>
+              </figure>
+              <div class="amount-box">
+                <i class="fa-solid fa-minus decrease"></i>
+                <p class="food-amount"> 1 </p>
+                <i class="fa-solid fa-plus increase"></i>
+              </div>
+                <p class="order-price">$120</p>
+            </div>
+          </div>
+          <div class="line" aria-label="line"></div>
+          <div class="calcAmount">
+            <p>TotallAmount :</p>
+            <p class="totalPrice">0</p>
+            <button class="btn btn-order">Order all</button>
+          </div>
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </section>
+      <section class="msg-from-admin">
+        <div class="msg-admin-container">
+          <p class="admin-msg">
+            From admin : </span>
+          </p>
+        </div>
+      </section>
+    </main>
+    <div class="alret-container">
+      <div class="alret-box">
+        <p class="alret-text">
+          Money is not enough!! Money is not enough!!Money is not enough!!
+        </p>
+        <button class="btn btn-ok">Ok</button>
+      </div>
+    </div>
+    <div class="adminUisection">
+      <h2 class="heading-secondary text-center mg-bot">Wellcome to Admin</h2>
+      <div class="container grid grid--2--col">
+        <div class="income-box-container">
+          <div class="income-box">
+            <div class="income">
+              <p class="name-sm">
+                <em>From customer <span class="income-name"> Goh</span></em>
+              </p>
+              <p>Income : <span class="income-price"> 400$</span></p>
+            </div>
+          </div>
+          <div class="line" aria-label="line-one"></div>
+          <div class="totallIncome">
+            <p>Today total Income : <span class="t-income"> 400$</span></p>
+          </div>
+        </div>
+        <div class="customer-msg-box">
+          <div class="msg-box">
+            <div class="message">
+              <p class="name-sm">
+                <em>From customer <span class="msg-name"> Goh</span></em>
+              </p>
+              <p class="msg-text">Income system really good</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h3 class="heading-secondary text-center mg-bot">Admin replay</h3>
+      <div class="replay-form-container">
+        <form class="replay-form">
+          <div class="replay-username">
+            <input
+              id="replay"
+              type="text"
+              placeholder="Replay to"
+              class="input__form input-replay"
+            />
+          </div>
+          <div class="replay-text">
+            <textarea class="replay-textarea"></textarea>
+          </div>
+          <button class="btn btn-replay">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </form>
+      </div>
+      <div class="btn-back-container">
+        <button class="btn btn-back">Back</button>
+      </div>
+    </div>
+
+    <!-- Custom js link -->
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

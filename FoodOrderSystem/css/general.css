@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  color: #333;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+.grid {
+  display: grid;
+  gap: 9.6rem 4.8rem;
+}
+.grid--2--col {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--4--col {
+  grid-template-columns: repeat(4, 1fr);
+}
+/******************************** */
+/* heading */
+.heading-primary,
+.heading-secondary {
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: #333;
+}
+.heading-primary {
+  font-size: 4.4rem;
+}
+.heading-secondary {
+  font-size: 3rem;
+}
+.heading-tertiary {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.text-center {
+  text-align: center;
+}
+
+/******************************** */
+/* button */
+.btn,
+.btn:link,
+.btn:visited {
+  display: block;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  background-color: #00ff00;
+  border-radius: 9px;
+  cursor: pointer;
+  color: #fff;
+}
+.btn:hover,
+.btn:active {
+  background-color: #00be00;
+}
+.btn-signup,
+.btn-login,
+.btn-admin {
+  margin-top: 3.2rem;
+  padding: 0.8rem 4.8rem;
+  font-size: 1.8rem;
+}
+.btn-add,
+.btn-order,
+.btn-s,
+.btn-l,
+.btn-back {
+  padding: 0.8rem 1.6rem;
+  font-size: 1.6rem;
+}
+.btn-s,
+.btn-l {
+  margin-top: 2.4rem;
+  display: inline-block;
+  margin-right: 2.4rem;
+  background-color: #4a82ff;
+}
+.btn-back {
+  background-color: #4a82ff;
+}
+.btn-ok,
+.btn-send {
+  padding: 0.8rem 1.6rem;
+  font-size: 1.4rem;
+}
+.btn-replay {
+  color: #fff;
+  padding: 0.8rem 1.6rem;
+  font-size: 1.8rem;
+}
+
+.mg-bot {
+  margin-bottom: 4.8rem;
+}
+
+/******************************** */
+/* login form */
+
+.form-section {
+  padding: 9.6rem 0 0 0;
+  overflow: hidden;
+  max-height: 100vh;
+}
+.login {
+  background-image: linear-gradient(to top right, #bfffb9, #4cff45);
+  margin-top: 4.8rem;
+  border-radius: 11px;
+  overflow: hidden;
+  box-shadow: 0 2.4rem 3.2rem rgba(0, 0, 0, 0.296);
+}
+.login-form,
+.signup-form {
+  justify-self: center;
+  padding: 3.2rem 0;
+}
+
+.input__form {
+  font-size: 1.4rem;
+  padding: 1rem 1.6rem;
+  border-radius: 9px;
+  border: none;
+}
+label {
+  font-size: 2rem;
+  font-weight: 500;
+  display: block;
+  margin: 2.4rem 0 1rem 0;
+}
+.login-img {
+  background-image: linear-gradient(
+      to top right,
+      rgba(191, 255, 185, 0.506),
+      rgba(75, 255, 69, 0.527)
+    ),
+    url(../loginphoto.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.account {
+  margin-top: 6.4rem;
+  font-size: 1.8rem;
+}
+.create {
+  font-weight: 600;
+  color: #00ff00;
+  cursor: pointer;
+}
+.create:hover {
+  border-bottom: 2px solid #00ff00;
+}
+/******************************** */
+
+.my-cart-container {
+  position: relative;
+}
+.fa-xmark {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.7rem;
+  border-radius: 50%;
+  font-size: 1.6rem;
+  font-weight: 600;
+  background-color: rgb(255, 55, 55);
+  color: #fff;
+  cursor: pointer;
+}

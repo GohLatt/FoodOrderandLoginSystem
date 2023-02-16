@@ -1,0 +1,353 @@
+.wrong-alret {
+  margin-top: 1.4rem;
+  font-size: 1.8rem;
+  color: #fa4848;
+}
+.wrong-username,
+.wrong-password {
+  display: none;
+}
+/**************************************/
+/* sigup section and login */
+.login-section {
+  display: none;
+}
+
+/**************************************/
+/* user-ui-section */
+.user-ui-section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+.open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: visible;
+}
+.nav {
+  display: flex;
+  font-size: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.6rem 4.8rem;
+  box-shadow: 0 1.2rem 1.2rem rgba(0, 0, 0, 0.16);
+  position: fixed;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.915);
+}
+.balance {
+  color: #00be00;
+  font-weight: 600;
+}
+.fa-cart-shopping,
+.fa-envelope {
+  font-size: 1.8rem;
+  border: 1px solid #bfffb9;
+  padding: 1rem;
+  background-color: #bfffb9;
+  border-radius: 50%;
+  color: #00be00;
+  cursor: pointer;
+}
+
+.shop span {
+  font-size: 1.8rem;
+  user-select: none;
+}
+.foods {
+  padding: 12.8rem 0 9.6rem;
+}
+.food-box {
+  border-radius: 11px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.food-img {
+  width: 100%;
+  height: 15rem;
+  display: block;
+}
+.food-text-box {
+  padding: 1.6rem 0 3.2rem 0;
+}
+.price-text-box {
+  margin-top: 2.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2.4rem 0 2.4rem;
+}
+.price {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+/**************************************/
+/* my-cart-section */
+.my-cart-section {
+  position: fixed;
+  top: 73px;
+  right: 0;
+  width: 40%;
+  height: 100vh;
+  z-index: 5;
+  background-color: #fff;
+  transition: all 0.3s;
+}
+.hidden {
+  right: -54rem;
+}
+.my-cart-container {
+  padding: 3.2rem;
+  max-height: 90vh;
+  overflow-y: scroll;
+}
+.order-food-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  padding: 1.2rem 2.3rem;
+  margin-bottom: 2.4rem;
+  border-radius: 9px;
+}
+.amount-box {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  font-size: 1.8rem;
+}
+.food-amount {
+  color: #333;
+  font-weight: 600;
+}
+.fa-minus,
+.fa-plus {
+  font-size: 1.6rem;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 50%;
+  color: #555;
+}
+.fa-minus:hover,
+.fa-plus:hover {
+  background-color: #00ff00;
+  color: #fff;
+}
+.order-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.order-price {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.order-food-name {
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.count {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin: 0 1.2rem 0;
+}
+
+.line {
+  border: 1px solid #000;
+  margin: 3.2rem;
+}
+.calcAmount {
+  display: flex;
+  justify-content: center;
+  gap: 4.8rem;
+  align-items: center;
+}
+.calcAmount p {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.alret-container {
+  position: fixed;
+  top: -10rem;
+  left: 50%;
+  height: 10rem;
+  transform: translateX(-50%);
+  transition: all 0.3s;
+  z-index: 10;
+}
+.alret-box {
+  padding: 3.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #555;
+  gap: 3.2rem;
+}
+.alret-text {
+  font-size: 1.4rem;
+  color: #fff;
+  font-weight: 500;
+}
+/* user feedback section */
+.user-feedback {
+  padding: 9.6rem 0;
+  background-color: #f0ffee;
+}
+
+.text-area {
+  width: 80%;
+  height: 80%;
+  padding: 3.2rem 2.4rem;
+  outline: none;
+  border: 1px solid #00be00;
+  font-size: 1.8rem;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn-send {
+  margin-right: 2rem;
+}
+.admin {
+  background-color: #fdc6be;
+  border-radius: 11px;
+  box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.16);
+}
+.admin-form {
+  padding: 3.2rem 4.8rem;
+}
+
+/* adminUisection */
+.adminUisection {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150vh;
+  z-index: 8;
+  background-color: #bfffb9;
+  padding: 4.8rem 0;
+  display: none;
+}
+
+.income-box-container,
+.customer-msg-box {
+  padding: 3.2rem 2.4rem;
+  background-color: #ffe3de;
+  border-radius: 11px;
+  margin-bottom: 2.4rem;
+}
+.income-box,
+.msg-box {
+  max-height: 70vh;
+  overflow-y: scroll;
+}
+.income,
+.message {
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  background-color: #fff;
+  padding: 2.4rem;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  border-radius: 11px;
+  margin-bottom: 2.4rem;
+}
+.income {
+  width: 80%;
+
+  justify-content: space-between;
+}
+.message {
+  width: 50rem;
+
+  gap: 2.4rem;
+}
+.income-price {
+  font-weight: 500;
+}
+.totallIncome {
+  padding: 0 2.4rem;
+  font-size: 2rem;
+}
+.t-income {
+  font-weight: 600;
+  color: #333;
+}
+
+.msg-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+.name-sm {
+  font-size: 1.6rem;
+}
+.line-one {
+  border: 1px solid #000;
+}
+.replay-form-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.4rem;
+}
+.replay-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+}
+.replay-textarea {
+  width: 50rem;
+  height: 10rem;
+  outline: none;
+  font-size: 1.8rem;
+  padding: 2.4rem;
+}
+
+/* feedback msg */
+.icon-mail {
+  position: relative;
+}
+.noti {
+  position: absolute;
+  top: -2px;
+  right: 4px;
+  color: red;
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+.msg-from-admin {
+  position: fixed;
+  top: 72px;
+  left: -199px;
+  padding: 1rem 2.4rem 1rem 2rem;
+  background-color: rgba(255, 46, 46, 0.744);
+  z-index: 2;
+}
+
+.msg-admin-container {
+  font-size: 1.6rem;
+  padding: 1rem 0;
+  height: 100%;
+  color: #fff;
+  transition: all 0.3s;
+}
+.btn-back-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.2rem;
+}
